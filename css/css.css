@@ -1,23 +1,104 @@
 @font-face {
 	font-family: "pacifico";
-	src: url("../font/pacifico.ttf") format("truetype");
+	src: url("../font/pacifico.eot");
 }
-@font-face { 
-	font-family: "helveticaneuecyr-bold";
-	src: url("../font/helveticaneuecyr-bold.otf");
+@font-face {
+	font-family: "pacifico";
+	src: url("../font/pacifico.svg");
 }
-@font-face { 
+@font-face {
+	font-family: "pacifico";
+	src: url("../font/pacifico.ttf");
+}
+@font-face {
+	font-family: "pacifico";
+	src: url("../font/pacifico.woff");
+}
+@font-face {
+	font-family: "pacifico";
+	src: url("../font/pacifico.woff2");
+}
+@font-face {
 	font-family: "helveticaneuecyr-medium";
-	src: url("../font/helveticaneuecyr-medium.otf");
+	src: url("../font/helveticaneuecyr-medium.eot");
 }
-@font-face { 
-	font-family: "helveticaneuecyr-light";
-	src: url("../font/helveticaneuecyr-light.otf");
+@font-face {
+	font-family: "helveticaneuecyr-medium";
+	src: url("../font/helveticaneuecyr-medium.svg");
 }
-@font-face { 
+@font-face {
+	font-family: "helveticaneuecyr-medium";
+	src: url("../font/helveticaneuecyr-medium.ttf");
+}
+@font-face {
+	font-family: "helveticaneuecyr-medium";
+	src: url("../font/helveticaneuecyr-medium.woff");
+}
+@font-face {
+	font-family: "helveticaneuecyr-medium";
+	src: url("../font/helveticaneuecyr-medium.woff2");
+}
+@font-face {
 	font-family: "helveticaneuecyr-roman";
-	src: url("../font/helveticaneuecyr-roman.otf");
+	src: url("../font/helveticaneuecyr-roman.eot");
 }
+@font-face {
+	font-family: "helveticaneuecyr-roman";
+	src: url("../font/helveticaneuecyr-roman.svg");
+}
+@font-face {
+	font-family: "helveticaneuecyr-roman";
+	src: url("../font/helveticaneuecyr-roman.ttf");
+}
+@font-face {
+	font-family: "helveticaneuecyr-roman";
+	src: url("../font/helveticaneuecyr-roman.woff");
+}
+@font-face {
+	font-family: "helveticaneuecyr-roman";
+	src: url("../font/helveticaneuecyr-roman.woff2");
+}
+@font-face {
+	font-family: "helveticaneuecyr-light";
+	src: url("../font/helveticaneuecyr-light.eot");
+}
+@font-face {
+	font-family: "helveticaneuecyr-light";
+	src: url("../font/helveticaneuecyr-light.svg");
+}
+@font-face {
+	font-family: "helveticaneuecyr-light";
+	src: url("../font/helveticaneuecyr-light.ttf");
+}
+@font-face {
+	font-family: "helveticaneuecyr-light";
+	src: url("../font/helveticaneuecyr-light.woff");
+}
+@font-face {
+	font-family: "helveticaneuecyr-light";
+	src: url("../font/helveticaneuecyr-light.woff2");
+}
+@font-face {
+	font-family: "helveticaneuecyr-bold";
+	src: url("../font/helveticaneuecyr-bold.eot");
+}
+@font-face {
+	font-family: "helveticaneuecyr-bold";
+	src: url("../font/helveticaneuecyr-bold.svg");
+}
+@font-face {
+	font-family: "helveticaneuecyr-bold";
+	src: url("../font/helveticaneuecyr-bold.ttf");
+}
+@font-face {
+	font-family: "helveticaneuecyr-bold";
+	src: url("../font/helveticaneuecyr-bold.woff");
+}
+@font-face {
+	font-family: "helveticaneuecyr-bold";
+	src: url("../font/helveticaneuecyr-bold.woff2");
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -172,7 +253,7 @@ ul {
 }
 											/*widjets*/
 .widjets {
-	height: 367px;
+	height: 433px;
 	width: 978px;
 	margin: 0 auto;
 	font-family: "helveticaneuecyr-roman";
@@ -188,24 +269,39 @@ ul {
 	width: 305px;
 	text-align: center;
 }
+.usab:nth-of-type(1) {
+	margin-top: 119px;
+}
 .usab > h1 {
 	font-size: 20px;
 	color: #4b5a65;
 	margin-top: 70px;
 }
+.usab:nth-of-type(1) > h1 {
+	margin-top: 60px;
+}
 .usab > p {
 	color: #bebebe;
 	font-size: 14px;
 }
-.usab > button {
+.batons {
+	margin: 0 auto;
+	width: 68px;
+	display: block;
+	cursor: pointer;
 	margin-top: 39px;
+	padding: 16px 30px;
+	background: linear-gradient(to top, #498dca, #57a0d2);
+	border: 1px solid #609bd0;
+	border-radius: 5px;
+}
+.batons:hover {
+	background: linear-gradient(to top, #57a0d2, #498dca);
+}
+.batons > a {
+	color: #fff;
 	font-family: "helveticaneuecyr-bold";
 	font-size: 13px;
-	color: #fff;
-	padding: 16px 30px;
-	background-color: #579fd2;
-	border: 0;
-	border-radius: 5px;
 }
 .icon-mobile-phone, .icon-cogs, .icon-flask {
 	color: #7d8f9b;
@@ -213,6 +309,10 @@ ul {
 	border: 5px solid #7d8f9b;
 	border-radius: 75px;
 	padding: 27px 45px;
+}
+.icon-mobile-phone {
+	font-size: 85px;
+	padding: 15px 40px;
 }
 .right {
 	float: right;
@@ -234,7 +334,7 @@ ul {
 	height: 297px;
 }
 .icon-location {
-	margin-top: 178px;
+	margin-top: 100px;
 	position: absolute;
 	left: 87px;
 	font-size: 20px;
