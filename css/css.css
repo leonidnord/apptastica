@@ -66,9 +66,9 @@ ul {
 	border: 1px solid transparent;
 }
 .header-ul > li:hover {
-	border-color: #419ad4;
+	border-color: none;
 	border-radius: 30px;
-	background: linear-gradient(to top, #378acd, #297baf);
+	background: rgba(61,72,80,0.5);
 }
 .img-ipfon {
 	position: absolute;
@@ -184,7 +184,7 @@ ul {
 }*/
 .usab {
 	float: left;
-	margin-top: 50px;
+	margin-top: 128px;
 	width: 305px;
 	text-align: center;
 }
@@ -234,7 +234,7 @@ ul {
 	height: 297px;
 }
 .icon-location {
-	margin-top: 100px;
+	margin-top: 178px;
 	position: absolute;
 	left: 87px;
 	font-size: 20px;
@@ -263,9 +263,10 @@ ul {
 	margin-left: 55px;
 }
 .imeg-projects > span {
+	cursor: pointer;
 	position: absolute;
 	top: 98px;
-	font-size: 20px;
+	font-size: 30px;
 	color: #5c5f61;
 	border: 1px solid #bdc1c4;
 	background-color: #eaedef;
@@ -349,16 +350,20 @@ ul {
 	height: 313px;
 }
 
-.icon-twitter2:nth-of-type(2) {
+.twitter-bva {
 	color: #00aced;
 	font-size: 22px;
+}
+.twitter-abv {
+	color: #fff;
+	font-size: 15px;
 }
 .twitter > p:nth-of-type(1) {
 	color: #4c5b66;
 	font-size: 20px;
 }
 .twitter-a {
-	color: #515151;
+	color: #adadad;
 	font-size: 13px;
 }
 .twitter > p > a {
@@ -369,11 +374,14 @@ ul {
 	color: #b0b0b0;
 	font-size: 11px;
 }
+.twitter-a > span:nth-of-type(1) {
+	color: #515151;
+}
 .footer {
 	margin: 0 auto;
 	bottom: 0;
 	width: 978px;
-	border-top: 1px solid #000;
+	border-top: 1px solid #e8e8e8;
 }
 .footer > p {
 	float: left;
