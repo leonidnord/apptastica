@@ -130,13 +130,13 @@ ul {
 	border-bottom: 1px solid #c3c3c3;
 	background: linear-gradient(to top, #e7e7e7, #f1f1f1);
 }
-.logos-width {
+.our-clients {
 	position: relative;
 	margin: 0 auto;
 	width: 978px;
 	height: 77px;
 }
-.logos-width > ul > li {
+.our-clients > ul > li {
 	position: absolute;
 	display: inline-block;
 	top: 17px;
@@ -170,14 +170,14 @@ ul {
 	height: 41px;
 	background-image: url(../img/ea.png);
 }
-											/*icons-usab*/
-.icons-usab {
+											/*widjets*/
+.widjets {
 	height: 367px;
 	width: 978px;
 	margin: 0 auto;
 	font-family: "helveticaneuecyr-roman";
 }
-/*.icons-usab::after {
+/*.widjets::after {
 	content: "";
 	position: absolute;
 	clear: both;
@@ -280,7 +280,7 @@ ul {
 }
 									/*blog tviter*/
 										/*blog*/
-.kurva {
+.botom-widjet {
 	position: relative;
 	margin: 120px auto 0 auto;
 	height: 330px;
