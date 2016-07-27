@@ -141,6 +141,7 @@ ul {
 	margin-right: -20px;
 }
 .header-ul > li {
+	cursor: pointer;
 	display: inline-block;
 	margin-left: 15px;
 	padding: 12px 20px;
@@ -229,7 +230,7 @@ ul {
 }
 .ebey {
 	left: 204px;
-	width:90px;
+	width:94px;
 	height: 40px; 
 	background-image: url(../img/ebey.png);
 }
