@@ -121,6 +121,7 @@ ul {
 	height: 610px;
 }
 .apptastico-h1 {
+	font-weight: normal;
 	margin: 0;
 	font-family: 'pacifico';
 	font-size: 31px;
@@ -270,7 +271,7 @@ ul {
 	text-align: center;
 }
 .usab:nth-of-type(1) {
-	margin-top: 119px;
+	margin-top: 116px;
 }
 .usab > h1 {
 	font-size: 20px;
@@ -278,7 +279,7 @@ ul {
 	margin-top: 70px;
 }
 .usab:nth-of-type(1) > h1 {
-	margin-top: 60px;
+	margin-top: 59px;
 }
 .usab > p {
 	color: #bebebe;
@@ -311,7 +312,7 @@ ul {
 	padding: 27px 45px;
 }
 .icon-mobile-phone {
-	font-size: 85px;
+	font-size: 86px;
 	padding: 15px 40px;
 }
 .right {
@@ -353,14 +354,14 @@ ul {
 }
 .imeg-projects > img {
 	margin-top: 26px;
-	margin-left: 32px;
+	margin-left: 12px;
 	width: 216px;
 	height: 154px;
 	border: 1px solid #f2f2f2;
 	padding: 3px;
 }
 .icon-chevron-left2 + img {
-	margin-left: 55px;
+	margin-left: 90px;
 }
 .imeg-projects > span {
 	cursor: pointer;
