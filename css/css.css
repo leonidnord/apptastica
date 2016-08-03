@@ -125,52 +125,60 @@ ul {
 .float-right {
 	float: right;
 }
-.battons-ios-apps span a, .battons-ios-apps, .top-header, .ios-apps, .header-ul > li > a {
+.buttons-ios-apps span a, .buttons-ios-apps, .top-header, .ios-apps, .header-menu > li > a, .top-header > p > a {
 	color: #fff;
 }
-.float-left, .apptastico-h1, .heder > img, .ios-apps > h1 {
+.float-left, .apptastico-p, .header > img, .ios-apps > p, .logo-d, .ebay, .mcdonalds, .adidas, .ea, .our-clients > ul > li {
 	float: left;
 }
-.float-right, .header-ul, .ios-apps, .ios-apps > p, .battons-ios-apps {
+.float-right, .header-menu, .ios-apps, .ios-apps > p, .buttons-ios-apps {
 	float: right;
 }
-.margin-bottom-0, .ios-apps, .ios-apps > h1, .ios-apps > p {
+.margin-bottom-0, .ios-apps, .ios-apps > p, .ios-apps > p {
 	margin-bottom: 0;
 }
-.heder-bagraund {
-	margin-bottom: -2px;
+.header-background {
+	margin-bottom: -1px;
 	background-image: url(../img/header-baskgraund.jpg);
 }
-.apptastico-h1 {
+.top-header > p {
+	display: inline;
 	font-weight: normal;
 	margin: 6px 0 0 0;
 	font-family: 'pacifico';
 	font-size: 31px;
+	line-height: 2.2;
 }
-.heder {
+.header {
 	width: 978px;
 	margin: 0 auto;
 }
 .top-header {
 	padding-top: 45px;
 }
-.header-ul {
+.header-menu {
 	margin-right: -17px;
 }
-.header-ul > li {
+.header-menu > li {
 	display: inline-block;
 	margin-top: 26px;
 	margin-left: 10px;
 	padding: 3px 16px;
 	border: 1px solid transparent;
 }
-.header-ul > li:hover {
+.header-menu > li:hover {
 	cursor: pointer;
-	border-color: none;
 	border-radius: 30px;
-	background: rgba(61,72,80,0.5);
+	background: linear-gradient( to top, rgba( 71, 83, 92, 0.2 ), rgba( 56, 66, 73, 0.5 ) );
+	box-shadow: 0px 1px 0px 0px rgba( 255, 255, 255, 0.15 );
 }
-.heder > img {
+.active {
+	cursor: pointer;
+	border-radius: 30px;
+	background: linear-gradient( to top, rgba( 71, 83, 92, 0.2 ), rgba( 56, 66, 73, 0.5 ) );
+	box-shadow: 0px 1px 0px 0px rgba( 255, 255, 255, 0.15 );
+}
+.header > img {
 	margin-top: 58px;	
 	display: block;
 }
@@ -178,7 +186,8 @@ ul {
     margin-top: 115px;
     width: 475px;
 }
-.ios-apps > h1 {
+.ios-apps > p:nth-of-type(1) {
+	float: left;
 	font-family: "helveticaneuecyr-bold";
 	font-size: 48px;
 	margin-top: 6px;
@@ -188,117 +197,103 @@ ul {
 	word-spacing: 1px;
 	line-height: 1.6;
 }
-.ios-apps > p:nth-of-type(1) {
+.ios-apps > p:nth-of-type(2) {
 	font-family: "helveticaneuecyr-medium";
 	color: #b3b5b7;
 	margin-top: 8px;
 }
-.ios-apps > p:nth-of-type(2) {
+.ios-apps > p:nth-of-type(3) {
 	font-family: "helveticaneuecyr-light";
 	color: #7c8184;
     margin-top: 12px;
 }
-.battons-ios-apps {
+.buttons-ios-apps {
     margin-top: 62px;
     margin-right: 57px;
 }
-.battons-ios-apps > span:nth-of-type(2) {
+.buttons-ios-apps > span:nth-of-type(2) {
 	padding: 0px 13px 0 15px;
 }
-.request-batton {
+.request-button {
 	font-size: 14px;
 	border: 1px solid #419ad4;
 	border-radius: 30px;
 	padding: 13px 47px;
-	background: linear-gradient(to top, #378acd, #297baf);
+	background: linear-gradient(to top, #439ed5, #439ed5);
+	box-shadow: 1px 5px 4px rgba(0, 0, 0, 0.2);
 }
-.request-batton:hover {
+.request-button:hover {
 	background: linear-gradient(to top, #297baf, #378acd);
 }
 .icon-desktop-link:hover {
 	border-bottom: 1px solid #fff;
 }
-.log-bor-color {
+.border-color-our-clients {
 	border-top: 1px solid #5a5a5a;
 	border-bottom: 1px solid #c3c3c3;
 	background: linear-gradient(to top, #e7e7e7, #f1f1f1);
 }
 .our-clients {
-	position: relative;
 	margin: 0 auto;
 	width: 978px;
-	height: 77px;
 }
 .our-clients > ul > li {
-	position: absolute;
+	margin-bottom: 10px;
 	display: inline-block;
-	top: 17px;
-}
-.our-clients > ul > li:nth-of-type(1) {
-	left: 0;
 }
 .logo-d {
-	width: 75px;
-	height: 43px;
-	background-image: url(../img/logo-d.png);
+	margin-top: 8px;
+	margin-left: 0;
 }
-.ebey {
-	left: 204px;
-	width:95px;
-	height: 40px; 
-	background-image: url(../img/ebey.png);
+.ebay {
+	margin-top: 11px;
+	margin-left: 128px;
 }
-.mack {
-	left: 461px;
-	width: 45px;
-	height: 38px;
-	background-image: url(../img/mack.png);
+.mcdonalds {
+	margin-top: 11px;
+	margin-left: 166px;
 }
 .adidas {
-	right: 244px;
-	width: 57px;
-	height: 44px;
-	background-image: url(../img/adidas.png);
+	margin-top: 7px;
+	margin-left: 162px;
 }
 .ea {
-	right: 0;
-	width: 79px;
-	height: 41px;
-	background-image: url(../img/ea.png);
+	margin-top: 10px;
+	margin-left: 170px;
 }
-.widjets-conteiner {
+.widget-container {
 	width: 978px;
 	margin: 0 auto;
 	font-family: "helveticaneuecyr-roman";
 }
-.float-left, .widjets {
+.float-left, .widget {
 	float: left;
 }
-.widjets {
+.widget {
 	margin-top: 128px;
 	width: 305px;
 	text-align: center;
 }
-.widjets:nth-of-type(1) {
+.widget:nth-of-type(1) {
 	margin-top: 116px;
 }
-.widjets > h1 {
+.widget > p:nth-of-type(1) {
 	font-size: 20px;
 	color: #4b5a65;
 	margin-top: 64px;
 	margin-bottom: 0;
 }
-.widjets:nth-of-type(1) > h1 {
+.widget:nth-of-type(1) > p {
 	margin-top: 54px;
 }
-.widjets > p {
+.widget > p:nth-of-type(2) {
 	color: #bebebe;
 	font-size: 14px;
     margin-top: 8px;
     word-spacing: 8px;
     line-height: 1.4;
 }
-.batons {
+.buttons {
 	margin: 0 auto;
     width: 80px;
     display: block;
@@ -309,10 +304,10 @@ ul {
     border: 1px solid #609bd0;
     border-radius: 5px;
 }
-.batons:hover {
+.buttons:hover {
 	background: linear-gradient(to top, #57a0d2, #498dca);
 }
-.batons > a {
+.buttons > a {
 	color: #fff;
 	font-family: "helveticaneuecyr-bold";
 	font-size: 13px;
@@ -354,13 +349,13 @@ ul {
 	color: #4c5b66;
 	font-family: "helveticaneuecyr-roman";
 }
-.imeg-projects {
+.selected-projects > div {
     width: 1124px;
     position: relative;
     margin-top: -5px;
     float: left;
 }
-.imeg-projects > img {
+.selected-projects > div > img {
 	margin-top: 26px;
 	margin-left: 24px;
 	height: 154px;
@@ -378,7 +373,7 @@ ul {
     width: 216px;
     height: 154px;
 }
-.imeg-projects > span {
+.selected-projects > div > span {
 	cursor: pointer;
     position: absolute;
     top: 87px;
@@ -417,14 +412,14 @@ ul {
 .skaype {
 	margin-top: 15px;
 }
-.desk-sk > img {
+.desktop-skaype > img {
 	padding: 4px;
 	border: 1px solid #bdc1c4;
 	float: left;
 	width: 132px;
 	height: 94px;
 }
-.desk-sk > p {
+.desktop-skaype > p {
     line-height: 1.7;
     margin: 0 auto 0 auto;
     float: left;
@@ -433,12 +428,12 @@ ul {
     width: 300px;
     color: #888;
 }
-.desk-sk > p > span:nth-of-type(1) {
+.desktop-skaype > p > span:nth-of-type(1) {
 	line-height: 0.1;
 	color: #5c5c5c;
 	font-size: 15px;
 }
-.desk-sk > p > a, .blog > p > a {
+.desktop-skaype > p > a, .blog > p > a {
 	color: #3c92d0;
 }
 .older-entries {
@@ -448,7 +443,7 @@ ul {
 	display: block;
 	font-size: 13px;
 }
-.desk-sk > p > span:nth-of-type(2) {
+.desktop-skaype > p > span:nth-of-type(2) {
 	color: #b0b0b0;
 	font-size: 11px;
 }
@@ -481,7 +476,7 @@ ul {
 	color: #adadad;
 	font-size: 13px;
 	letter-spacing: 1px;
-	margin-bottom: 23px;
+	margin-bottom: 9px;
 	margin-top: 0;
 	line-height: 1.5;
 }
@@ -512,12 +507,12 @@ ul {
 	color: #8a8a8a;
 	font-family: "helveticaneuecyr-roman"
 }
-.soshal-icons {
+.social-icons {
 	float: right;
 	margin-bottom: 0;
 	margin-top: 12px;
 }
-.soshal-icons > li > a {
+.social-icons > li > a {
 	height: 32px;
     width: 32px;
     line-height: 35px;
@@ -527,7 +522,7 @@ ul {
     display: inline-block;
     text-align: center;
 }
-.soshal-icons > li {
+.social-icons > li {
 	margin-left: 5px;
 	display: inline;
 }
