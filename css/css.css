@@ -179,7 +179,7 @@ ul {
 	box-shadow: 0px 1px 0px 0px rgba( 255, 255, 255, 0.15 );
 }
 .header > img {
-	margin-top: 58px;	
+	margin-top: 49px;	
 	display: block;
 }
 .ios-apps {
@@ -190,7 +190,7 @@ ul {
 	float: left;
 	font-family: "helveticaneuecyr-bold";
 	font-size: 48px;
-	margin-top: 6px;
+	margin-top: -12px;
 }
 .ios-apps > p {
 	font-size: 16px;
@@ -200,7 +200,7 @@ ul {
 .ios-apps > p:nth-of-type(2) {
 	font-family: "helveticaneuecyr-medium";
 	color: #b3b5b7;
-	margin-top: 8px;
+	margin-top: -4px;
 }
 .ios-apps > p:nth-of-type(3) {
 	font-family: "helveticaneuecyr-light";
@@ -229,6 +229,7 @@ ul {
 	border-bottom: 1px solid #fff;
 }
 .border-color-our-clients {
+	padding-top: 9px;
 	border-top: 1px solid #5a5a5a;
 	border-bottom: 1px solid #c3c3c3;
 	background: linear-gradient(to top, #e7e7e7, #f1f1f1);
