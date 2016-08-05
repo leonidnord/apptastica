@@ -125,10 +125,10 @@ ul {
 .float-right {
 	float: right;
 }
-.buttons-ios-apps span a, .buttons-ios-apps, .top-header, .ios-apps, .header-menu > li > a, .top-header > p > a {
+.text-color, .buttons-ios-apps span a, .header-menu > li > a, .top-header > p > a {
 	color: #fff;
 }
-.float-left, .apptastico-p, .header > img, .ios-apps > p, .logo-d, .ebay, .mcdonalds, .adidas, .ea, .our-clients > ul > li {
+.float-left, .header-background > div > img, .ios-apps > p, .our-clients > div > ul > li {
 	float: left;
 }
 .float-right, .header-menu, .ios-apps, .ios-apps > p, .buttons-ios-apps {
@@ -149,7 +149,7 @@ ul {
 	font-size: 31px;
 	line-height: 2.2;
 }
-.header {
+.header-background > div {
 	width: 978px;
 	margin: 0 auto;
 }
@@ -178,7 +178,7 @@ ul {
 	background: linear-gradient( to top, rgba( 71, 83, 92, 0.2 ), rgba( 56, 66, 73, 0.5 ) );
 	box-shadow: 0px 1px 0px 0px rgba( 255, 255, 255, 0.15 );
 }
-.header > img {
+.header-background > div > img {
 	margin-top: 49px;	
 	display: block;
 }
@@ -228,17 +228,17 @@ ul {
 .icon-desktop-link:hover {
 	border-bottom: 1px solid #fff;
 }
-.border-color-our-clients {
+.our-clients {
 	padding-top: 9px;
 	border-top: 1px solid #5a5a5a;
 	border-bottom: 1px solid #c3c3c3;
 	background: linear-gradient(to top, #e7e7e7, #f1f1f1);
 }
-.our-clients {
+.our-clients > div {
 	margin: 0 auto;
 	width: 978px;
 }
-.our-clients > ul > li {
+.our-clients > div > ul > li {
 	margin-bottom: 10px;
 	display: inline-block;
 }
@@ -262,32 +262,32 @@ ul {
 	margin-top: 10px;
 	margin-left: 170px;
 }
-.widget-container {
+.widget {
 	width: 978px;
 	margin: 0 auto;
 	font-family: "helveticaneuecyr-roman";
 }
-.float-left, .widget {
+.float-left, .widget > div {
 	float: left;
 }
-.widget {
+.widget > div {
 	margin-top: 128px;
 	width: 305px;
 	text-align: center;
 }
-.widget:nth-of-type(1) {
+.widget > div:nth-of-type(1) {
 	margin-top: 116px;
 }
-.widget > p:nth-of-type(1) {
+.widget > div > p:nth-of-type(1) {
 	font-size: 20px;
 	color: #4b5a65;
 	margin-top: 64px;
 	margin-bottom: 0;
 }
-.widget:nth-of-type(1) > p {
+.widget > div:nth-of-type(1) > p {
 	margin-top: 54px;
 }
-.widget > p:nth-of-type(2) {
+.widget > div > p:nth-of-type(2) {
 	color: #bebebe;
 	font-size: 14px;
     margin-top: 8px;
@@ -327,7 +327,7 @@ ul {
 .float-right {
 	float: right;
 }
-.midle {
+.widget > div:nth-of-type(2) {
 	margin-left: 30px;
 }
 .icon-cogs {
