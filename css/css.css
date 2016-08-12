@@ -637,16 +637,11 @@ h2 {
 		text-align: center;
 	}
 }
-/*.nav {
-	float: right;
-}
-.nav li {
-	float: left;
-}
-.nav li a,
 #touch-menu {
+	margin-right: 10px;
 	display: block;
-	padding: 12px 15px;
+	float: right;
+	padding: 3px 5px;
 	font-weight: bold;
 	font-size: 14px;
 	color: #fff;
@@ -654,48 +649,33 @@ h2 {
 #touch-menu {
 	display: none;
 }
-
+.icon-navicon {
+	font-size: 20px;
+}
 @media (max-width: 768px) {
-	h1 {
-		position: relative;
-		top: 0;
-		left: 0;
-		right: 0;
-	}
-	.nav {
-		position: absolute;
-		top: 100%;
-		left: 0;
-		right: 0;
-		display: none;
-	}
-	.nav li {
-		float: none;
-	}
-	.nav li a {
-		color: #666;
-		border-top: 1px solid #eee;
-		border-left: 3px solid transparent;
-		background: #fff;
-	}
-	.nav li:first-child a {
-		border-top: none;
-	}
-	.nav li a:hover {
-		color: #333;
-		border-left: 3px solid #515572;
-		background: #f0f0f0;
-	}
 	#touch-menu {
 		display: block;
 		float: right;
-		height: 50px;
 		padding-top: 30px;
 	}
-}*/
+	.nav {
+		clear: both;
+		width: 20%;
+		float: right;
+		padding-top: 0;
+	}
+	.nav li {
+		float: left;
+		margin-left: 0;
+	}
+
+}
 @media screen and (max-width: 500px) {
 	.ios-apps, .buttons-ios-apps {
 		width: 100%;
+	}
+	.desktop-skaype > p {
+		margin-left: 0;
 	}
 	.widget > div, .widget > div:nth-of-type(2) {
 		width: 100%;
