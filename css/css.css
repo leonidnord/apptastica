@@ -98,8 +98,12 @@
 	font-family: "helveticaneuecyr-bold";
 	src: url("../font/helveticaneuecyr-bold.woff2");
 }
-
 body {
+	margin: 0;
+	padding: 0;
+}
+h1, h2, h3, h4, h5, h6, {
+	text-decoration: none;
 	margin: 0;
 	padding: 0;
 }
@@ -117,7 +121,6 @@ a {
 }
 ul {
 	margin: 0;
-	padding: 0;
 }
 .float-left {
 	float: left;
@@ -125,13 +128,13 @@ ul {
 .float-right {
 	float: right;
 }
-.text-color, .buttons-ios-apps span a, .header-menu > li > a, .top-header > p > a {
+.text-color, .buttons-ios-apps span a, .nav > li > a, h1 > a {
 	color: #fff;
 }
 .float-left, .header-background > div > img, .ios-apps > p, .our-clients > div > ul > li {
 	float: left;
 }
-.float-right, .header-menu, .ios-apps, .ios-apps > p, .buttons-ios-apps {
+.float-right, .nav, .ios-apps, .ios-apps > p, .buttons-ios-apps {
 	float: right;
 }
 .margin-bottom-0, .ios-apps, .ios-apps > p, .ios-apps > p {
@@ -141,7 +144,8 @@ ul {
 	margin-bottom: -1px;
 	background-image: url(../img/header-baskgraund.jpg);
 }
-.top-header > p {
+h1 {
+	float: left;
 	display: inline;
 	font-weight: normal;
 	margin: 6px 0 0 0;
@@ -150,43 +154,47 @@ ul {
 	line-height: 2.2;
 }
 .header-background > div {
-	width: 978px;
+	max-width: 978px;
 	margin: 0 auto;
+	padding: 0 20px
 }
-.top-header {
+.header {
 	padding-top: 45px;
 }
-.header-menu {
-	margin-right: -17px;
+.nav {
+	padding-top: 30px;
 }
-.header-menu > li {
+.active {
+	margin-left: 0 !important;
+	cursor: pointer;
+	border-radius: 30px;
+	background: linear-gradient( to top, rgba( 71, 83, 92, 0.2 ), rgba( 56, 66, 73, 0.5 ) );
+	box-shadow: 0px 1px 0px 0px rgba( 255, 255, 255, 0.15 );
+}
+.nav > li {
 	display: inline-block;
-	margin-top: 26px;
 	margin-left: 10px;
 	padding: 3px 16px;
 	border: 1px solid transparent;
 }
-.header-menu > li:hover {
+.nav > li:hover {
 	cursor: pointer;
 	border-radius: 30px;
 	background: linear-gradient( to top, rgba( 71, 83, 92, 0.2 ), rgba( 56, 66, 73, 0.5 ) );
 	box-shadow: 0px 1px 0px 0px rgba( 255, 255, 255, 0.15 );
 }
-.active {
-	cursor: pointer;
-	border-radius: 30px;
-	background: linear-gradient( to top, rgba( 71, 83, 92, 0.2 ), rgba( 56, 66, 73, 0.5 ) );
-	box-shadow: 0px 1px 0px 0px rgba( 255, 255, 255, 0.15 );
-}
+
 .header-background > div > img {
 	margin-top: 49px;	
-	display: block;
+	max-width: 100%;
+	max-height: auto;
+	width: 38%;
 }
 .ios-apps {
-    margin-top: 115px;
-    width: 475px;
+    margin-top: 12%;
+    width: 49%;
 }
-.ios-apps > p:nth-of-type(1) {
+h2 {
 	float: left;
 	font-family: "helveticaneuecyr-bold";
 	font-size: 48px;
@@ -197,18 +205,18 @@ ul {
 	word-spacing: 1px;
 	line-height: 1.6;
 }
-.ios-apps > p:nth-of-type(2) {
+.ios-apps > p:nth-of-type(1) {
 	font-family: "helveticaneuecyr-medium";
 	color: #b3b5b7;
 	margin-top: -4px;
 }
-.ios-apps > p:nth-of-type(3) {
+.ios-apps > p:nth-of-type(2) {
 	font-family: "helveticaneuecyr-light";
 	color: #7c8184;
     margin-top: 12px;
 }
 .buttons-ios-apps {
-    margin-top: 62px;
+    margin-top: 6%;
     margin-right: 57px;
 }
 .buttons-ios-apps > span:nth-of-type(2) {
@@ -235,8 +243,9 @@ ul {
 	background: linear-gradient(to top, #e7e7e7, #f1f1f1);
 }
 .our-clients > div {
+	padding: 0 20px;
 	margin: 0 auto;
-	width: 978px;
+	max-width: 978px;
 }
 .our-clients > div > ul > li {
 	margin-bottom: 10px;
@@ -248,22 +257,23 @@ ul {
 }
 .ebay {
 	margin-top: 11px;
-	margin-left: 128px;
+	margin-left: 13%;
 }
 .mcdonalds {
 	margin-top: 11px;
-	margin-left: 166px;
+	margin-left: 17%;
 }
 .adidas {
 	margin-top: 7px;
-	margin-left: 162px;
+	margin-left: 17%;
 }
 .ea {
 	margin-top: 10px;
-	margin-left: 170px;
+	margin-left: 17%;
 }
 .widget {
-	width: 978px;
+	padding: 0 20px 0 20px;
+	max-width: 978px;
 	margin: 0 auto;
 	font-family: "helveticaneuecyr-roman";
 }
@@ -272,7 +282,7 @@ ul {
 }
 .widget > div {
 	margin-top: 128px;
-	width: 305px;
+	max-width: 305px;
 	text-align: center;
 }
 .widget > div:nth-of-type(1) {
@@ -338,7 +348,7 @@ ul {
 }
 .selected-projects {
 	margin: 96px auto 0 auto;
-	width: 1124px;
+	max-width: 1124px;
 }
 .icon-location {
 	margin-top: 82px;
@@ -351,10 +361,9 @@ ul {
 	font-family: "helveticaneuecyr-roman";
 }
 .selected-projects > div {
-    width: 1124px;
+    max-width: 1124px;
     position: relative;
     margin-top: -5px;
-    float: left;
 }
 .selected-projects > div > img {
 	margin-top: 26px;
@@ -392,7 +401,7 @@ ul {
 }
 .botom-widjet {
 	margin: 85px auto 0 auto;
-	width: 978px;
+	max-width: 978px;
 	font-family: 'helveticaneuecyr-roman';
 }
 .blog {
@@ -498,7 +507,7 @@ ul {
 .footer {
 	margin: 2px auto 0 auto;
 	bottom: 0;
-	width: 978px;
+	max-width: 978px;
 	border-top: 1px solid #e8e8e8;
 }
 .footer > p {
@@ -538,4 +547,173 @@ ul {
 }
 .linkedin {
 	background-color: #0173b2;
+}
+@media screen and (max-width: 975px) {
+	.ea {
+		display: none !important;
+	}
+	.our-clients > div > ul {
+		margin: 0 auto;
+	}
+	.header {
+		padding-top: 0px;
+	}
+	h2 {
+		font-size: 30px;
+	}
+	.ios-apps > p {
+		font-size: 15px;
+	}
+	.buttons-ios-apps {
+		margin: 20px 0 0 0;
+		font-size: 12px;
+	}
+	.widget > div {
+		width: 33.33%
+	}
+	.widget > div:nth-of-type(2) {
+		margin-left: 0;
+	}
+	.blog, .twitter {
+		width: 80% !important;
+		margin: 0 auto;
+		float: none;
+	}
+	.footer > p, .footer > ul {
+		padding: 0 20px;
+	}
+	.selected-projects {
+		margin-top: 0;
+	}
+	.selected-projects > div > img:nth-of-type(3), .selected-projects > div > img:nth-of-type(4), .selected-projects > div > span {
+		display: none;
+	}
+	.selected-projects > div > img:nth-of-type(1) {
+		margin-left: 20% !important;
+	}
+	.selected-projects > div {
+		margin: 0 auto;
+		float: none;
+	}
+	.botom-widjet {
+		margin-top: 20px;
+	}
+}
+@media screen and (min-width: 976px) {
+	ul {
+		padding: 0;
+	}
+}
+@media screen and (max-width: 740px) {
+	.header-background > div > img {
+		display: none;
+	}
+	.ios-apps {
+		margin: 10% auto 0 auto;
+		width: 80%;
+		height: auto;
+		float: none;
+	}
+	.buttons-ios-apps {
+		margin: 5% auto 0 auto;
+		float: none;
+		width: 80%;
+		padding-bottom: 5%;
+	}
+	.adidas {
+		display: none !important;
+	}
+}
+@media screen and (max-width: 1124px) {
+	.selected-projects > div > span {
+		display: none;
+	}
+	.selected-projects > div > img:nth-of-type(1) {
+		margin-left: 2%;
+	}
+	.icon-location {
+		margin: 25px auto 25px auto;
+		display: block;
+		text-align: center;
+	}
+}
+/*.nav {
+	float: right;
+}
+.nav li {
+	float: left;
+}
+.nav li a,
+#touch-menu {
+	display: block;
+	padding: 12px 15px;
+	font-weight: bold;
+	font-size: 14px;
+	color: #fff;
+}
+#touch-menu {
+	display: none;
+}
+
+@media (max-width: 768px) {
+	h1 {
+		position: relative;
+		top: 0;
+		left: 0;
+		right: 0;
+	}
+	.nav {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		display: none;
+	}
+	.nav li {
+		float: none;
+	}
+	.nav li a {
+		color: #666;
+		border-top: 1px solid #eee;
+		border-left: 3px solid transparent;
+		background: #fff;
+	}
+	.nav li:first-child a {
+		border-top: none;
+	}
+	.nav li a:hover {
+		color: #333;
+		border-left: 3px solid #515572;
+		background: #f0f0f0;
+	}
+	#touch-menu {
+		display: block;
+		float: right;
+		height: 50px;
+		padding-top: 30px;
+	}
+}*/
+@media screen and (max-width: 500px) {
+	.ios-apps, .buttons-ios-apps {
+		width: 100%;
+	}
+	.widget > div, .widget > div:nth-of-type(2) {
+		width: 100%;
+		margin-left: 9%;
+	}
+	.selected-projects > div > img:nth-of-type(2), .mcdonalds, .desktop-skaype > img {
+		display: none !important;
+	}
+	.desktop-skaype {
+		width: 100%;
+	}
+	.selected-projects > div > img:nth-of-type(1) {
+		margin-left: 26% !important;
+	}
+	.request-button {
+		padding: 5px 10px;
+	}
+	.ebay {
+		margin-left: 25%;
+	}
 }
